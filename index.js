@@ -28,5 +28,5 @@ app.use('/api/event', require('./routes/event'))
 
 // Escuchar peticiones
 app.listen(process.env.PORT /* Primer parametro es el puerto != de 3000 */, () => { /* El segundo es una funcion que se ejecutara cuando el servidor este arriba */
-  console.log(`Servidor corriendo en puerto ${4000}`)
+  console.log(`Servidor corriendo en puerto ${process.env.PORT}`)
 })
